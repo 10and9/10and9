@@ -1,0 +1,339 @@
+:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+@font-face {
+	font-family: 'GolosWebTextBold';
+	src: url('Fonts/Golos_Text%20Bold.eot');
+	src:
+	     url('Fonts/Golos_Text%20Bold.eot?#iefix') format('embedded-opentype'),
+	     url('Fonts/Golos_Text%20Bold.woff2') format('woff2'),
+	     url('Fonts/Golos_Text%20Bold.woff') format('woff'),
+	     url('Fonts/Golos_Text%20Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GolosWebTextDemiBold';
+	src: url('Fonts/Golos_Text%20DemiBold.eot');
+	src:
+	     url('Fonts/Golos_Text%20DemiBold.eot?#iefix') format('embedded-opentype'),
+	     url('Fonts/Golos_Text%20DemiBold.woff2') format('woff2'),
+	     url('Fonts/Golos_Text%20DemiBold.woff') format('woff'),
+	     url('Fonts/Golos_Text%20DemiBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GolosWebTextRegular';
+	src: url('Fonts/Golos_Text%20Regular.eot');
+	src:
+	     url('Fonts/Golos_Text%20Regular.eot?#iefix') format('embedded-opentype'),
+	     url('Fonts/Golos_Text%20Regular.woff2') format('woff2'),
+	     url('Fonts/Golos_Text%20Regular.woff') format('woff'),
+	     url('Fonts/Golos_Text%20Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: #fafafa;
+	margin: 0;
+	padding: 0;
+}
+
+body .container {
+	 /*position: relative;*/
+}
+
+.nav_color{
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.bg{
+  width: 100%;
+  height: 100vh;
+  background-color: #FAFAFA;
+  background-image: url('Img/BG.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5em;
+  padding-bottom: 10em;
+}
+
+.svg_target{
+  width: 200%;
+  height: auto;
+  margin-top: 1em;
+}
+
+/*svg {
+	 width: 150%;
+}*/
+
+svg .inactive {
+	 animation: none;
+}
+
+svg .active, svg .hover {
+	 animation: strokefill 0.5s linear 0.3s forwards;
+}
+
+svg .menu-active, svg .menu-hover {
+	 animation: strokefill 0.3s linear forwards;
+}
+ svg .menu-circle-active, svg .menu-circle-hover {
+	 animation: fill 0.6s linear forwards;
+}
+ svg .circle--first {
+	 stroke-dasharray: 1232;
+	 stroke-dashoffset: 1232;
+}
+ svg .circle--second {
+	 stroke-dasharray: 1079;
+	 stroke-dashoffset: 1079;
+}
+ svg .circle--third {
+	 stroke-dasharray: 931;
+	 stroke-dashoffset: 931;
+}
+ svg .circle--fourth {
+	 stroke-dasharray: 780;
+	 stroke-dashoffset: 780;
+}
+ svg .circle--fifth {
+	 stroke-dasharray: 630;
+	 stroke-dashoffset: 630;
+}
+ svg .circle--sixth {
+	 stroke-dasharray: 480;
+	 stroke-dashoffset: 480;
+}
+ svg .menucircle {
+	 opacity: 0;
+}
+ svg .line--first {
+	 stroke-dasharray: 148;
+	 stroke-dashoffset: 148;
+}
+ svg .line--second {
+	 stroke-dasharray: 153;
+	 stroke-dashoffset: 153;
+}
+ svg .line--third {
+	 stroke-dasharray: 155;
+	 stroke-dashoffset: 155;
+}
+ svg .line--fourth {
+	 stroke-dasharray: 173;
+	 stroke-dashoffset: 173;
+}
+ svg .line--fifth {
+	 stroke-dasharray: 204;
+	 stroke-dashoffset: 204;
+}
+ svg .line--sixth {
+	 stroke-dasharray: 246;
+	 stroke-dashoffset: 246;
+}
+ svg .line--secondary--first {
+	 stroke-dasharray: 412;
+	 stroke-dashoffset: 412;
+}
+ svg .line--secondary--second {
+	 stroke-dasharray: 256;
+	 stroke-dashoffset: 256;
+}
+ svg .line--secondary--third {
+	 stroke-dasharray: 375;
+	 stroke-dashoffset: 375;
+}
+ svg .line--secondary--fourth {
+	 stroke-dasharray: 190;
+	 stroke-dashoffset: 190;
+}
+
+ @keyframes strokefill {
+	 to {
+		 stroke-dashoffset: 0;
+	}
+}
+ @keyframes fill {
+	 100% {
+		 opacity: 1;
+	}
+}
+
+.title{
+  font-family: 'GolosWebTextBold';
+  font-size: 2.875em;
+  color: #000000;
+  margin-top: 1.25em;
+  position: relative;
+}
+
+.circle_icon{
+  position: absolute;
+  top: 2em;
+  left: -1.5em;
+}
+
+.labels {
+	 /*display: inline-block;*/
+	 list-style-type: none;
+	 padding: 0;
+	 margin: 0;
+	 /*position: absolute;*/
+	 margin-top: 6.5%;
+}
+
+/*.labels li {
+	 cursor: pointer;
+	 font: 1.125em 'GolosWebTextRegular';
+	 /*padding-bottom: 5%;
+   padding-bottom: 1em;
+}
+*/
+
+.labels li:first-child {
+	 color: #000000;
+   transition: 0.4s;
+}
+
+.labels li:first-child:hover {
+  color: #D81C54;
+}
+
+.labels li:nth-child(2) {
+   color: #000000;
+   transition: 0.4s;
+}
+
+.labels li:nth-child(2):hover {
+  color: #D81C54;
+}
+
+.labels li:nth-child(3) {
+   color: #000000;
+   transition: 0.4s;
+}
+
+.labels li:nth-child(3):hover {
+   color: #D81C54;
+}
+
+.labels li:nth-child(4) {
+   color: #000000;
+   transition: 0.4s;
+}
+
+.labels li:nth-child(4):hover {
+   color: #D81C54;
+}
+
+.labels li:nth-child(5) {
+   color: #000000;
+   transition: 0.4s;
+}
+
+.labels li:nth-child(5):hover {
+   color: #D81C54;
+}
+
+.labels li:last-child {
+   color: #000000;
+   transition: 0.4s;
+}
+
+.labels li:last-child:hover {
+   color: #D81C54;
+}
+
+.link_lg{
+  font: 1.125em 'GolosWebTextRegular';
+  color: #2B2B2B;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.link_lg:hover{
+  color: #D81C54;
+}
+
+.icon_target{
+  margin-top: 0.05em;
+  margin-right: 0.60em;
+}
+
+.link_button{
+  font-family: 'GolosWebTextDemiBold';
+  font-size: 1.125em;
+  color: #000000;
+  border: 1px solid #D81C54;
+  padding: 1.25em 3em;
+  transition: 0.4s;
+  background-color: transparent;
+}
+
+.link_button:hover{
+  color: #FFFFFF;
+  background-color: #D81C54;
+}
+
+.target{
+  width: 100%;
+  height: auto;
+  margin-top: 3em;
+}
+
+#Red{
+  transition: 0.4s;
+}
+
+#Bullethole{
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#Bullethole2{
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#rotate {
+	-webkit-animation: rotate 30s infinite;
+	-moz-animation: rotate 30s infinite;
+	-ms-animation: rotate 30s infinite;
+	animation: rotate 30s infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	animation-timing-function: linear
+}
+
+@keyframes rotate {
+100%{
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg)
+}
+}
+
+.services_nav{
+  margin-top: 2.5em;
+}
+
+.services{
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+}
